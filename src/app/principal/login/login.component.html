@@ -1,0 +1,15 @@
+
+<form>
+<section class="col-3 container">
+    <h2>Inicio de sesión</h2>
+    <section class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" name="usuario" [(ngModel)]="usu" (input)="validacion()">
+    </section>
+    <section class="form-group">
+        <label for="password">Password:</label>
+        <input type="text" class="form-control" id="password" name="contraseña" [(ngModel)]="pass" (input)="validacion()">
+    </section>
+        <input class="btn btn-primary mt-4" (click)="login(); validacion()" value="Iniciar sesión" [disabled]="deshabilitado">
+</section>
+</form>
